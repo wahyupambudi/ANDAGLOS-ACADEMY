@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Diri</title>
+</head>
+<body>
+		<div>
+			<h1>Selamat Datang</h1>
+			<p>Silahkan isi Data Diri anda</p>
+		</div>
+
+<form>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<p>
+			<label for="full-name"> Full Name</label>
+			<input id="full-name" name="FullName" type="text">
+		</p>
+		<p>
+			<label for="email"> Email Address</label>
+			<input id="email" name="email" type="email">
+		</p>
+		<p>
+			<label for="data"> Pilih Berkas </label>
+			<input id="data" name="data" type="file">
+		</p>
+	</fieldset>
+</form>
+
+<form> <!-- kita akan membuat list -->
+	<p>
+		<label for="programing"> Your Preferred Programing Languages?</label>
+		<input placeholder="Input Language" type="text" name="programing" list="ProgramingLangs"/>
+		<datalist id="ProgramingLangs">
+			<select name="altProgramingLangs">
+				<option value="javascript"> Java Script </option>
+				<option value="java"> Java </option>
+				<option value="ruby"> Ruby </option>
+				<option value="python"> Python </option>
+			</select>
+		</datalist>
+	</p>
+</form>
+
+<form>
+	<label for="gender">Gender :</label>
+	<input id="male-radio" type="radio" name="gender" value="male">
+	<label for="male-radio">Male</label>
+	<input id="female-radio" type="radio" name="gender" value="female">
+	<label for="female-radio"> Female </label>
+</form>
+<br>
+<form>
+	<label for="skill">Skill :</label>
+	<input id="writing-checkbox" type="checkbox" name="skill" value="writing">
+	<label for="writing-checkbox"> Writing </label>
+	<input id="reading-checkbox" type="checkbox" name="skill" value="reading">
+	<label for="reading-checkbox"> Reading </label>
+	<input type="submit" value="Submit">
+</form>
+<br>
+<form action="form.html" method="POST">
+	<label>
+		Nama :
+		<input type="text" name="nama"/>
+	</label>
+	<input type="submit" value="Kirim">
+</form>
+<br>
+<form>
+	<fieldset>
+		<legend>Work Information</legend>
+		
+		<ul>
+			<li>Program</li>
+		</ul>
+
+	</fieldset>
+</form>
+
+</body>
+</html>

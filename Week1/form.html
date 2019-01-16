@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Web Pelajar	</title>
+</head>
+<body>
+
+<form>
+	<fieldset>
+		<legend> Personal Information</legend>
+   		<p>
+			<label for = "full-name"> Full Name </label>
+			<input placeholder="Input Name" id="full-name" name="fullName" type="text">
+		</p>
+		<p>
+			<label for="email"> Email Address </label>
+			<input placeholder="Email" id="email" name="email" type="email">
+		</p>
+		<p>
+      		<label for="telpon"> No Telp </label>
+      		<input placeholder="Telp" id="telpon" name="telpon" type="tel" >
+      	</p>
+      	<p>
+     		<label for= "berkas"> Input Berkas </label>
+    		<input id="berkas" name="berkas" type="file">
+    	</p>
+  	</fieldset>
+  
+	<fieldset>
+		<legend>Work Information</legend>
+		<!-- isi dengan lainya -->
+	</fieldset>
+</form>
+  
+
+<form>
+    <p>
+    	<label for="programing"> Your Preferred Programing Languages?</label>
+      	<input placeholder="Input Language" type="text" name="programing" list="programingLangs" />
+   <datalist id="programingLangs">
+     <select name="altprogramingLangs">
+      	<option value="javascript"> JavaScript </option>
+      	<option value="java"> Java </option>
+      	<option value="ruby"> Ruby </option>
+      	<option value="python"> Python </option>
+     </select>
+  </datalist>
+    </p>
+</form>
+  
+<form>
+  <label for="gender"> Gender:</label>
+  <input id="male-radio" type="radio" name="gender" value="male">
+  <label for="male-radio">Male</label>
+  <input id="female-radio" type="radio" name="gender" value="female">
+  <label for="female-radio">Female</label>
+</form>
+  
+<form>
+    <label for="skill">Skill:</label>
+    <input id="writing-checkbox" type="checkbox" name="skill" value="writing">
+    <label for="writing-checkbox">Writing</label>
+    <input id="reading-checkbox" type="checkbox" name="skill" value="reading">
+    <label for="reading-checkbox">Reading</label>
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+    <form action="halaman_sukses_submit.html" method="POST">
+      <label>
+        Nama:
+        <input type="text" name="nama" />
+      </label>
+      <input type="submit" value="Kirim"
+      
+ 
+</form>
+    
+  </form>
+</body>
+</html>
