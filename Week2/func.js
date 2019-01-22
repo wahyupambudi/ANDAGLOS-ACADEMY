@@ -28,6 +28,7 @@ function processSentence(name,age,address,hobby){
 // var address = "Jln. Malioboro, Yogyakarta,";
 // var hobby = "gaming!";
 
-var fullSentence = processSentence(' Agus',30,'Jln. Malioboro, Yogyakarta,','gaming!');
 // var fullSentence = processSentence(name,age,address,hobby);
+
+var fullSentence = processSentence(' Agus',30,'Jln. Malioboro, Yogyakarta,','gaming!');
 console.log(fullSentence);
