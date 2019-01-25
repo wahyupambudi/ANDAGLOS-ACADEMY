@@ -1,6 +1,7 @@
 //Cara 1
 
 function konversiMenit(menit){
+      var jam = 60
    if (menit <= 9){
     return ('00:0'+menit )
   }
@@ -21,15 +22,13 @@ function konversiMenit(menit){
     return('2:' + menit % jam)
   }
 }
-  var jam = 60
-console.log(konversiMenit(9));
-console.log(konversiMenit(59));
-console.log(konversiMenit(60));
-console.log(konversiMenit(67));
-console.log(konversiMenit(90));
+
+//TEST CASES
+console.log(konversiMenit(63));
+console.log(konversiMenit(124));
+console.log(konversiMenit(53));
+console.log(konversiMenit(88));
 console.log(konversiMenit(120));
-console.log(konversiMenit(121));
-console.log(konversiMenit(220));
 
 
 // CARA 2

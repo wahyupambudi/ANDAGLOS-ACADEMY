@@ -1,3 +1,4 @@
+//creator wahyup
 console.log('Welcome to the My Simple Project JavaScript App');
 console.log('')
 
