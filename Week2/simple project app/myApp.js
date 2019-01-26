@@ -6,8 +6,8 @@ console.log('Voting Presiden 2019')
 
 var presiden1 = 'Jokowi'
 var presiden2 = 'Prabowo'
-var votingJokowi = Math.floor(Math.pow(1000000, Math.random()));
-var votingPrabowo = Math.floor(Math.pow(1000000, Math.random()));
+var votingJokowi = Math.floor(Math.random()*100000);
+var votingPrabowo = Math.floor(Math.random()*100000);
 
 console.log('')
 console.log('Jumlah Voting Yang di peroleh ' + presiden1 +  ' adalah : ' +votingJokowi +' Suara')
