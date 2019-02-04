@@ -1,6 +1,20 @@
 function angkaPalindrome(angka){
-
-    return
+    var cek = false;
+    while(cek === false){
+    angka++;
+        // console.log(cek)
+    var angkabaru = angka.toString();
+    var hasil = '';
+    
+    for (var i = angkabaru.length -1 ; i >= 0; i--){
+        hasil = hasil+angkabaru[i]
+        // console.log(hasil)
+        if (hasil === angkabaru){
+            cek = true;
+            return angka;
+            }
+        }
+    }
 }
 
 // TEST CASES
