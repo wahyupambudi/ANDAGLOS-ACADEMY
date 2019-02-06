@@ -1,16 +1,15 @@
 function angkaPrima(angka){
-
-    for (var i = 2 ; i <= angka ; i++){
+    var hasil = true;
+    for (var i = 2 ; i < angka ; i++){
         // var hasil = angka % i;
         // console.log(hasil)
         // console.log(i)     
         // console.log(angka % i);   
         if (angka % i === 0 ){ // 33 / 3 = 11 
-            return false;
-        }else{
-            return true;
+            hasil = false;
         }
     }
+    return hasil;
 }
 
 // TEST CASES
