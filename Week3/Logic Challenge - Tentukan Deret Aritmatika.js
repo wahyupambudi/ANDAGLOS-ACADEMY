@@ -2,7 +2,7 @@ function tentukanDeretAritmatika(arr){
     var kurang = arr[arr.length-1] - arr[arr.length-2];
     // console.log(kurang)
     for (var i = 0 ; i < arr.length ; i++){
-        console.log(i)
+        // console.log(i)
         for (var j = i+1; j < arr.length ; j++){
          // console.log(j)
             if (arr[j] - arr[i] === kurang){

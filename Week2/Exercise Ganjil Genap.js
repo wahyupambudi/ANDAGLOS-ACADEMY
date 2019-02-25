@@ -2,7 +2,7 @@ console.log('Ganjil Genap')
 console.log('')
 for (var angka = 1 ; angka <= 100; angka ++){
  
-if (angka%2==0)
+if (angka%2===0)
    console.log(angka + " Genap");
 else
    console.log(angka + " Ganjil");
