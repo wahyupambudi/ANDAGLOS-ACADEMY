@@ -1,10 +1,38 @@
 function hitungHuruf(kata) {
     // you can only write your code here!
     var hasil = '';
-    var newkata = kata.split('');
+    var nilai = 0;
+    var newkata = kata.split(' ');
+    var result = 0;
+
+    // console.log(newkata)
 
     for(var i = 0; i < newkata.length; i++){
-      console.log(newkata[i])
+      hasil = newkata[i];
+      // console.log(hasil)
+
+      // var result = 0;
+      for(var j=0; j < hasil.length; j++){
+        // console.log(hasil[j])
+        for(var k=0; k < hasil.length; k++){
+          // console.log(hasil[k])
+          if(j !== k && hasil[j] === hasil[k]){
+            result++;
+            // console.log(result)
+          }
+        }
+      }
+      if(result > nilai){
+        nilai = result;
+        // console.log(nilai)
+        newkata = hasil;
+        // console.log(newkata)
+      }
+    }
+    if(nilai >= 2){
+      return newkata;
+    }else{
+      return -1
     }
 
   }
