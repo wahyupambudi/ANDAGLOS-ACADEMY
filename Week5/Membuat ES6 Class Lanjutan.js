@@ -5,7 +5,7 @@ class Student{
 		this.DateofBirth = DateofBirth;
 		this.Gender = Gender;
 		this.Student_ID = Student_ID;
-		this.Hobies = Hobies;
+		this.Hobies = [];
 	}
 
 	setName(newName){
@@ -32,10 +32,13 @@ class Student{
 	}
 
 	addHobby(newaddHobby){
-		return this.Hobies.push(newaddHobby);
+		return this.Hobies.push(newaddHobby)
 	}
 	removeHobby(newremoveHobby){
-		return this.Hobies.pop(newremoveHobby);
+		return this.Hobies.splice(this.Hobies.indexOf(newremoveHobby), 1);
+		// return this.Hobies.splice(this.Hobies(2,0))
+		// return this.Hobies.pop(newremoveHobby)
+
 	}
 
 	
@@ -63,24 +66,23 @@ class Student{
 	}
 }
 
-let newdata = new Student();
+let hasil = new Student('Wahyu Pambudi' , 18 , '19 November 2000' , ' ' , 'Admin798');
 
-let Name = 'Wahyu Pambudi';
-let Age  = 18;
-let DateofBirth = '09-November-2000';
-let Gender = 'Male';
-let Student_ID = 'admin123';
-let Hobies = ['Futsal', ' Study', ' Halan-Halan'];
-let addHobby = 'ad'
+let Gender = 'Male'; // agar if bisa berjalan
+let Hobies = ['Makan', ' main', ' futsal'];
 
-// let newdata = new Student(Name,Age,DateofBirth,Gender,Student_ID,Hobies);
+hasil.setGender(Gender); // mengambil set Gender
+hasil.setHobies(Hobies);
+console.log(hasil.getData());
 
-newdata.setName(Name);
-newdata.setAge(Age);
-newdata.setDateofBirth(DateofBirth);
-newdata.setGender(Gender);
-newdata.setStudent_ID(Student_ID);
-newdata.setHobies(Hobies);
+console.log('\n**** Ditambah addHobby **** \n')
 
+let addHobby = ' Jalan-Jalan'
+hasil.addHobby(addHobby);
+console.log(hasil.getData());
 
-console.log(newdata.getData());
+console.log('\n**** Dihapus dengan removeHobby **** \n')
+
+hasil.removeHobby(' main')
+console.log(hasil.getData());
+
