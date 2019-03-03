@@ -83,6 +83,8 @@ console.log(hasil.getData());
 
 console.log('\n**** Dihapus dengan removeHobby **** \n')
 
+// let removeHobby = ' main'
 hasil.removeHobby(' main')
+// hasil.removeHobby(removeHobby)
 console.log(hasil.getData());
 
