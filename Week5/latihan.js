@@ -100,33 +100,59 @@
 //  console.log(faktorialRekursif(2)); // 2
 //  console.log(faktorialRekursif(1)); // 1
 
-var paragraph = 'far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts!. Separated they! live in far away from Bookmarksgrove right at the coast of the Semantics,a large language ocean. A small . When she reached the first hills! of the Italic Mountains,she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road!, the Line Lane. Pityful a rethoric question ran over her cheek!'
+// var paragraph = 'far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts!. Separated they! live in far away from Bookmarksgrove right at the coast of the Semantics,a large language ocean. A small . When she reached the first hills! of the Italic Mountains,she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road!, the Line Lane. Pityful a rethoric question ran over her cheek!'
 
-console.log(paragraph.match(/far/g))
+// console.log(paragraph.match(/far/g))
 
-var message = 'Regex itu Mudah!';
-console.log(/[A-Z]/.test(message));
-// mengembalikan nilai true karena minimal satu karakter memenuhi pattern A-Z. Dan true, karena regex itu memang mudah :)
+// var message = 'Regex itu Mudah!';
+// console.log(/[A-Z]/.test(message));
+// // mengembalikan nilai true karena minimal satu karakter memenuhi pattern A-Z. Dan true, karena regex itu memang mudah :)
 
 
-var messageAllLowerCase = 'regex itu susah?';
-console.log(/[A-Z]/.test(messageAllLowerCase));
-// mengembalikan nilai false karena tidak ada satupun karakter yang memenuhi pattern A-Z. statement tersebut juga memang false! regex tidak sesulit yang kita kira!
+// var messageAllLowerCase = 'regex itu susah?';
+// console.log(/[A-Z]/.test(messageAllLowerCase));
+// // mengembalikan nilai false karena tidak ada satupun karakter yang memenuhi pattern A-Z. statement tersebut juga memang false! regex tidak sesulit yang kita kira!
 
-var str = 'belajar regex itu menyenangkan';
-console.log(str.split(/\s/));
-// mengembalikan nilai "belajar, regex, itu, menyenangkan" karena \s adalah sebuah pattern untuk satu spasi.
+// var str = 'belajar regex itu menyenangkan';
+// console.log(str.split(/\s/));
+// // mengembalikan nilai "belajar, regex, itu, menyenangkan" karena \s adalah sebuah pattern untuk satu spasi.
 
-var stringAwal = 'Regex itu sangat susah!';
-stringHasil = stringAwal.replace(/susah/, 'mudah');
-console.log(stringHasil); // mengembalikan nilai "Regex itu sangat mudah!"
+// var stringAwal = 'Regex itu sangat susah!';
+// stringHasil = stringAwal.replace(/susah/, 'mudah');
+// console.log(stringHasil); // mengembalikan nilai "Regex itu sangat mudah!"
 
-var message = 'Regex seru DEH!';
-console.log(message.match(/e/));
-// menampilkan "e", namun hanya sekali
+// var message = 'Regex seru DEH!';
+// console.log(message.match(/e/));
+// // menampilkan "e", namun hanya sekali
 
-console.log(message.match(/e/g));
-// menampilkan "e" untuk setiap "e" yang terdapat di dalam teks. `g` menandakan pencarian secara global, tidak hanya satu kali
+// console.log(message.match(/e/g));
+// // menampilkan "e" untuk setiap "e" yang terdapat di dalam teks. `g` menandakan pencarian secara global, tidak hanya satu kali
 
-console.log(message.match(/e/gi));
-// menampilkan "e" untuk setiap "e" yang terdapat di dalam teks. `i` menandakan pencarian karakter dengan ignore case, atau mengabaikan besar kecilnya karakter, sehingga "E" pun akan dicocokkan.
+// console.log(message.match(/e/gi));
+// // menampilkan "e" untuk setiap "e" yang terdapat di dalam teks. `i` menandakan pencarian karakter dengan ignore case, atau mengabaikan besar kecilnya karakter, sehingga "E" pun akan dicocokkan.
+
+
+var supermanObj = {
+  id: "1a2b3c",
+  name: "Superman",
+  age: 200,
+  favorites: [
+    "coding",
+    "reading",
+    {
+      sports: ["parkour", "hill climbing"]
+    }
+  ],
+  address: {},
+  speak: function() {
+    console.log('i am superman!');
+  }
+};
+
+console.log(supermanObj.name); // "Superman"
+console.log(supermanObj.age); // 200
+console.log(supermanObj.favorites[0]); // "coding"
+console.log(supermanObj.favorites[2].sports); // ["parkour", "hill climbing"]
+console.log(supermanObj.favorites[2].sports[0]); // "parkour"
+supermanObj.speak(); // "i am superman"
+

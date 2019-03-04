@@ -77,7 +77,7 @@ console.log(hasil.getData());
 
 console.log('\n**** Ditambah addHobby **** \n')
 
-let addHobby = ' Jalan-Jalan'
+let addHobby = ' Coding'
 hasil.addHobby(addHobby);
 console.log(hasil.getData());
 
