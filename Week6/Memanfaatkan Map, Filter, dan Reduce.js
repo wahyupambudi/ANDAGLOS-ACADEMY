@@ -48,7 +48,6 @@ var filterArrUnder10 = arr1.filter( inputarr => {
 	// 	return inputarr > 10
 	// }
 });
-
 console.log(filterArrUnder10); // [12, 15, 20]
 
 
