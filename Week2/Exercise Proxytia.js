@@ -47,3 +47,54 @@ if (nama === 'Mikael' && peran ==='Ksatria') {
 }else if (nama === 'Zero' && peran === ''){
     console.log('"Halo Zero, Pilih Peranmu untuk Memulai Game!"')
 }
+
+
+
+// simple
+
+var nama = "Son";
+var peran = "penyihir";
+
+if (nama !== "" && peran === "") {
+  console.log("Halo " + nama + ", Pilih Peranmu untuk memulai game!");
+} else if (nama !== "" && peran === "kami") {
+  console.log(
+    "Selamat Datang di dunia Proxytia, " +
+      nama +
+      "\nHalo " +
+      peran +
+      " " +
+      nama +
+      ", kamu dapat menyerang dengan KI!"
+  );
+} else if (nama !== "" && peran === "tabib") {
+  console.log(
+    "Selamat Datang di dunia Proxytia, " +
+      nama +
+      "\nHalo " +
+      peran +
+      " " +
+      nama +
+      ", kamu dapat Mengobati dengan KI!"
+  );
+} else if (nama !== "" && peran === "tabib") {
+	console.log(
+	  "Selamat Datang di dunia Proxytia, " +
+		nama +
+		"\nHalo " +
+		peran +
+		" " +
+		nama +
+		", kamu dapat Mengobati dengan KI!"
+	);
+  } else if (nama !== "" && peran === "penyihir") {
+  console.log(
+    "Selamat Datang di dunia Proxytia, " +
+      nama +
+      "\nHalo " +
+      peran +
+      " " +
+      nama +
+      ", kamu dapat Membunuh dengan KI!"
+  );
+}
